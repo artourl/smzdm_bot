@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
   # Uncomment below to schedule your job
-  # schedule:
-  #   - cron: "0 18 * * *"
+  schedule:
+    - cron: "0 18 * * *"
 
 env:
   TZ: Asia/Shanghai
@@ -30,7 +30,7 @@ jobs:
 
       - name: Working
         env:
-          SMZDM_COOKIE: ${{ secrets.SMZDM_COOKIE }}
+          SMZDM_COOKIE: device_id=21307064331640622282149606c3e2032f93f316f66cb83ba57e13166d; r_sort_type=score; __gads=ID=238c5c828126f01e:T=1640622284:S=ALNI_Mb0Uy3dRTgLf7qSfpizOfSzhdUSIw; shequ_pc_sug=b; smzdm_user_source=7D3DCFBF2532F3FF8D5103BA4CB31FF7; footer_floating_layer=0; homepage_sug=a; _uab_collina=166044889676661025445214; ssxmod_itna=WqUODK7IODO8GHD8D2DEDk06e=p80Am0ItUDBw8D4iNDnD8x7YDvG+pD0gjgAxht4AimB4GClESDNakmGS7+h5i1+PGLDmKDyD1o4GGfxBYDQxAYDGDDp8Dj4ibDY3z7DjAKt1MfoqAQDQ4GyDitDKMNcDi3DA4DjWu54ti=DI4GfDD3nFW6gnf0VteDSb7t3Ai=DjqGgDBLxz6bDGqFONYXgt=aDbxPRKCiDtqD9WQtUteDH8kXS4LHY8D3fhA51G7DaSivwmixQmD+et8eh0G5dl7D=0GD3t7Cdthz=dVSdeD=; ssxmod_itna2=WqUODK7IODO8GHD8D2DEDk06e=p80Am0ItD8MeT4GNUKGabDRODzpa4KAp7DC80+4Xh6t0THKF5y=CeL1eG225Q4uGKLoQ3WGtl7Lz0ttBdgEeG8kLB75ECBQC2qoCYF+qW0UZ701bD=QG4qnWkvft4rNYRfXQQ05kbf1jh0I7T5KL85qOjR=u8YNvCezemrbwx2OCe236q3xHWYnA7DsFR2SCnj294rxy4TkfcbUIWrTocUTD7QgD7=DeMDxD==; sess=BA-hWixfwjW2xdL8IVw7WRgCmLr49hu+h6bXy1GM0ZKOeusxcNskFM5mD7JdiYZfJ+e88WeYRACwplhTHIUEYExaiCP6w506Rs1qsF6IEvlLpwfCo48wEnlDU/d; user=user:7568246750|7568246750; smzdm_id=7568246750; ss_ab=ss95; ssmx_ab=mxss52; __ckguid=nWK3pAIGRGxsux7iUPSK34; s_his=redmi手环,小米手环,4t,4t 东芝; _zdmA.vid=*; sensorsdata2015jssdkcross={"distinct_id":"7568246750","first_id":"17e673bd748a8f-0d96491133abc8-5e181655-3686400-17e673bd749c2d","props":{"$latest_traffic_source_type":"直接流量","$latest_search_keyword":"未取到值_直接打开","$latest_referrer":"","$latest_landing_page":"https://www.smzdm.com/"},"$device_id":"17e673bd748a8f-0d96491133abc8-5e181655-3686400-17e673bd749c2d"}; Hm_lvt_9b7ac3d38f30fe89ff0b8a0546904e58=1672339564,1672341687,1672399529,1672595954; ad_date=2; ad_json_feed={}; _zdmA.uid=ZDMA.TcVAnz-d6.1672596011.2419200; Hm_lpvt_9b7ac3d38f30fe89ff0b8a0546904e58=1672596011; bannerCounter=[{"number":1,"surplus":1},{"number":0,"surplus":2},{"number":1,"surplus":1},{"number":0,"surplus":1},{"number":1,"surplus":1},{"number":0,"surplus":1}]; amvid=2667ff2c1c831a38aa7b96c03969a982; _zdmA.time=1672596012597.0.https://www.smzdm.com/
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
           SC_KEY: ${{ secrets.SC_KEY }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
